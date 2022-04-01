@@ -1,0 +1,28 @@
+.nav__link:hover {
+    color: var(--white-color);
+    background-color: #555;
+}
+
+.active {
+    color: var(--white-color);
+    font-weight: 700;
+    background-color: #555;
+  }
+
+.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 5px;
+    height: 36px;
+    background-color: var(--color-active);
+}
+
+.active::after {
+    content: '';
+    position: fixed;
+    left: calc(var(--nav-width) - 1rem);
+    width: 1rem;
+    height: 36px;
+    background-color: #555;
+}
