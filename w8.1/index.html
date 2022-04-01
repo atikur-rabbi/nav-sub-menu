@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== BOX ICONS ===== -->
+    <!-- <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'> -->
+    <link href='assets/boxicons-2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/styles-nav.css">
+    <link rel="stylesheet" href="assets/styles-title-card.css">
+
+
+
+
+    <title>Responsive Sidebar </title>
+</head>
+
+<body>
+    <div id="body-pd" class="body-div body-pd">
+        <header class="header body-pd" id="header">
+            <div class="header__toggle" >
+                <i class='bx bx-menu bx-x' id="header-toggle"></i>
+            </div>
+
+            <div class="header__img">
+                <i class='bx bx-user-circle'></i>
+            </div>
+        </header>
+
+        <div class="l-navbar show" id="nav-bar">
+            <nav class="nav">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="nav__logoImg" viewBox="0 0 312.251 322.326">
+                            <g id="Group_19" data-name="Group 19" transform="translate(9517 8641.933)">
+                                <path id="Path_1" data-name="Path 1" d="M120.722,3.387,105.44,18.669c15.3,2.5,29.136,4.156,42.888,6.224-.31,24.918-34.865,90.139-64.353,116.814-18.363-16.481-30.915-37.366-43.57-58L28.06,96.048c15.178,27.813,37.16,55.274,56.722,70.887,31.473-31.2,61.333-69.481,82.343-134.846,8.334,1.964,8.334,1.964,14.971,4.425-17.639,60.258-51.49,109.97-98.1,152.237C56.7,165.012,35.4,138.047,16,108.1L3.659,120.449c22.168,35.237,48.2,65.717,80.523,91.793,58.707-51.18,101.947-111.086,118.51-188.714A301.35,301.35,0,0,0,120.722,3.387" transform="translate(-9444.994 -8575.274)" fill="#fff"></path>
+                                <path id="Path_2" data-name="Path 2" d="M233.735,44.255V10.694C222.092,7.075,209.85,2.65,201.021.623l-14.1,14.1c11.063,3.35,19.459,5.4,29.612,8.478,0,3.474.1,6.224-.021,8.975-.083,1.758-.517,3.495-.889,5.873-14.392-3.453-28.165-6.762-41.957-10.071L158.546,43.1c30.315,5.893,59.617,11.559,85.776,26.365-17.391,99.155-83.315,178.251-138.652,216.982a427.209,427.209,0,0,1-90.656-99.816L2.483,199.16c27.358,43.157,64.332,77.545,103.808,110.9,23.781-17.536,45.493-36.953,73.451-68.964A354.3,354.3,0,0,0,256.006,97.978c3.329-12.449,4.942-25.352,7.382-38.276-10.65-5.563-20.079-10.463-29.653-15.447" transform="translate(-9468.137 -8629.666)" fill="#fff"></path>
+                                <path id="Path_3" data-name="Path 3" d="M43.769,101.985c-5-13.813-9.657-26.614-15.013-41.337C51.048,56.616,74.208,51.715,93.749,52l15.8-15.8c-29.261-2.316-56.619,1.1-84.059,7.651-1.241-5.19-2.419-10.05-3.577-14.909C58.1,19.1,99.643,16.272,124.685,21.069L140.856,4.9C117.509.908,92.943.887,69.679,3.037,46.85,5.147,24.248,8.083,3.052,15.569A291.8,291.8,0,0,0,31.03,114.723Z" transform="translate(-9456.94 -8610.244)" fill="#fff"></path>
+                                <path id="Path_4" data-name="Path 4" d="M42.206,195.3l12.511-12.511C37.636,150.651,24.939,117.71,19.624,81.646c4.57-2.233,8.561-4.2,13.276-6.514,7.858,33.355,17,65.3,33.893,95.577L79.407,158.1C60.155,119.054,48.492,78.461,47,34.933a516.074,516.074,0,0,1,84.742-16.46c28.95-3.329,56.639.62,83.129,4.156L229.349,8.154C159.062-6.962,93.965-.655,27.772,23.7,28.7,34.912,29.633,45.81,30.5,56.211,19.417,61.918,9.595,66.985,0,71.927,6.927,115.787,18.983,157,42.206,195.3" transform="translate(-9517 -8641.933)" fill="#fff"></path>
+                                <path id="Path_5" data-name="Path 5" d="M38.841,4.88l8.334,23.077,24.525.786L52.3,43.8l6.845,23.574L38.841,53.579,18.534,67.372,25.379,43.8,5.982,28.744l24.525-.786Z" transform="translate(-9399.274 -8545.886)" fill="#fff"></path>
+                            </g>
+                        </svg>
+
+                        <!-- <i class='bx bx-layer nav__logo-icon'></i> -->
+                        <span class="nav__logo-name">American Trust</span>
+                    </a>
+
+                    <div class="nav__list">
+                        <a href="#" class="nav__link active">
+                            <i class='bx bx-grid-alt nav__icon' ></i>
+                            <span class="nav__name">Dashboard</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-user nav__icon' ></i>
+                            <span class="nav__name">Clients</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bar-chart-alt-2 nav__icon' ></i>
+                            <span class="nav__name">Investments</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-pie-chart-alt-2 nav__icon'></i>
+                            <span class="nav__name">Resources</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bxs-report nav__icon'></i>
+                            <span class="nav__name">Reporting</span>
+                        </a>
+                    </div>
+
+
+                    <ul class="nav__list2">
+                        <li>
+                            <a href="#" class="nav__link active">
+                                <i class='bx bx-grid-alt nav__icon' ></i>
+                                <span class="nav__name">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-user nav__icon' ></i>
+                                <span class="nav__name">Clients</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-bar-chart-alt-2 nav__icon' ></i>
+                                <span class="nav__name">Investments</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+
+
+        <slot>
+
+            <div class="title-card">
+                <h1 class="title-card__title">Dashboard</h1>
+                <p class="title-card__subtitle">Welcome to your dashboard</p>
+            </div>
+
+        </slot>
+
+        
+
+    </div>
+    <!--===== MAIN JS =====-->
+    <script src="assets/main.js"></script>
+</body>
+
+</html>
