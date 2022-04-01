@@ -70,6 +70,7 @@
   nav a i.sub-icon {
     float: right;
     margin-right: 20px;
+    
   }
 
   nav input[type=checkbox]:checked ~ a i.sub-icon {
