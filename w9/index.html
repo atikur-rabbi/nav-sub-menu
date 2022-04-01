@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ===== BOX ICONS ===== -->
-    <!-- <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'> -->
-    <link href='assets/boxicons-2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link href='assets/boxicons-2.1.1/css/boxicons.min.css' rel='stylesheet'> -->
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="assets/styles.css">
-
+    <link rel="stylesheet" href="assets/submenu2.css">
 
 
 
@@ -75,7 +75,52 @@
                     <span class="nav__name">Log Out</span>
                 </a>
                 -->
+
+                <!-- partial:index.partial.html -->
+                <nav>
+                    <ul>
+                    <li><a href="#" title="Nach Hause">Home</a></li>
+                        <!-- end-->
+                    <li class="sub">
+                        <input type="checkbox" />
+                        <a href="#" >Logs</a>
+                
+                        
+                        <!-- Begin-->
+                    
+                        <ul class="submenu">
+                            <li class="sub">
+                                <input type="checkbox" />
+                                <a href="#" >Search Log Items</a>
+                            </li>
+                            <li class="sub">
+                                <input type="checkbox" />
+                                <a href="#" >Show XLS Files</a>
+                            </li>
+                            <li class="sub">
+                                <input type="checkbox" />
+                                <a href="#" >Change Log Levels</a>
+                            </li>
+                            </ul>
+                    </li>
+                
+                    <li><a href="#" >Logout</a></li>
+                    <li>
+                        <a href="#" class="">
+                            <i class='bx bxs-report '></i>
+                            <span class="nav__name">Reporting</span>
+                        </a>
+                    </li>
+                    <a href="#" class="nav__link">
+                        <i class='bx bxs-report nav__icon'></i>
+                        <span class="nav__name">Reporting</span>
+                    </a>
+                    
+                    </ul>
+                </nav>
+                <!-- partial -->
             </nav>
+            
         </div>
 
         <h1>Components</h1>

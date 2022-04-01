@@ -1,132 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - A vertical dropdown-menu (CSS only)</title>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'><link rel="stylesheet" href="./style.css">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Bin</title>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<nav>
-  <ul>
-    <li><a href="#" title="Nach Hause">Home</a></li>
-    <li class="sub">
-      <input type="checkbox" />
-      <a href="#" >Profile</a>
- 
-      
-      <!-- Begin-->
-    
-           <ul class="submenu">
-        <li class="sub">
-          <input type="checkbox" />
-          <a href="#" >Profile List</a>
-          
+    <style>
+        *{padding:0;margin:0;}
+body{font:16px/1 sans-serif}
+
+
+/*VERTICAL MENU*/
+nav.vertical{
+  position:relative;
+  background:#667;
+}
+
+/* ALL UL */
+nav.vertical ul{
+  list-style: none;
+}
+/* ALL LI */
+nav.vertical li{
+  position:relative;
+}
+/* ALL A */
+nav.vertical a{
+  display:block;
+  color:#eee;
+  text-decoration:none;
+  padding:10px 15px;
+  transition:0.2s;
+}
+/* ALL A HOVER */
+nav.vertical li:hover > a{
+  background:#778;
+}
+
+/* INNER UL HIDE */
+nav.vertical ul ul{
+  background:rgba(0,0,0,0.1);
+  padding-left:20px;
+  transition: max-height 0.2s ease-out;
+  max-height:0;
+  overflow:hidden;
+}
+/* INNER UL SHOW */
+nav.vertical li:hover > ul{
+  max-height:500px;
+  transition: max-height 0.25s ease-in;
+}
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+
+
+    <nav class="vertical">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services +</a>
+          <ul>
+            <li><a href="#">Service 1</a></li>
+            <li><a href="#">Service 2</a></li>
+            <li><a href="#">Service 3</a></li>
+          </ul>
         </li>
-      
+        
+        <li><a href="">Contact</a></li>
       </ul>
-    </li>
-      
- 
-      <!-- end-->
-    <li class="sub">
-      <input type="checkbox" />
-      <a href="#" >Logs</a>
- 
-      
-      <!-- Begin-->
-    
-           <ul class="submenu">
-        <li class="sub">
-          <input type="checkbox" />
-          <a href="#" >Search Log Items</a>
-          
-        </li>
-        <li class="sub">
-          <input type="checkbox" />
-          <a href="#" >Show XLS Files</a>
-         
-        </li>
-              <li class="sub">
-          <input type="checkbox" />
-          <a href="#" >Change Log Levels</a>
-         
-        </li>
-      </ul>
-    </li>
-    
-    </li>
-   <li class="sub">
-      <input type="checkbox" />
-      <a href="#" >Policy</a>
- 
-      
-      <!-- Begin-->
-    
-           <ul class="submenu">
-        <li class="sub">
-          <input type="checkbox" />
-          <a href="#" >Boot Parameters</a>
-          
-        </li>
-        <li class="sub">
-          <input type="checkbox" />
-          <a href="#" >Configure SMTP</a>
-         
-        </li>
-              <li class="sub">
-          <input type="checkbox" />
-          <a href="#" >Configure Purge Policy</a>
-         
-        </li>
-              <li class="sub">
-          <input type="checkbox" />
-          <a href="#" >Purge Now!</a>
-         
-        </li>
-      </ul>
-    </li>
-    <li class="sub">
-      <input type="checkbox" />
-      <a href="#" >Monitor</a>
- 
-      
-      <!-- Begin-->
-    
-           <ul class="submenu">
-        <li class="sub">
-          <input type="checkbox" />
-          <a href="#" >Monitor Server</a>
-          
-        </li>
-       
-      </ul>
-    </li>
-    <li class="sub">
-      <input type="checkbox" />
-      <a href="#" >Users</a>
- 
-      
-      <!-- Begin-->
-    
-           <ul class="submenu">
-        <li class="sub">
-          <input type="checkbox" />
-          <a href="#" >Manage Users</a>
-          
-        </li>
-        <li class="sub">
-          <input type="checkbox" />
-          <a href="#" >Change Password</a>
-         
-        </li>
-      </ul>
-    </li>
-    <li><a href="#" >Logout</a></li>
-  </ul>
-</nav>
-<!-- partial -->
-  
-</body>
+    </nav>
+
+
+  </body>
 </html>
