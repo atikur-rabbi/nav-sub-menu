@@ -48,7 +48,11 @@
   }
   
   nav li:hover {
-    background: #454546 !important;
+    /* background: #454546 !important; */
+  }
+
+  li.pure-menu-item:hover {
+    padding-left: 8px;
   }
   
   nav .submenu {
@@ -56,6 +60,10 @@
     overflow: hidden;
     border: none;
     transition: max-height 0.5s ease-in-out;
+  }
+
+  nav input[type=checkbox] {
+    z-index: 3;
   }
   
   nav input[type=checkbox]:checked ~ .submenu {
@@ -99,3 +107,4 @@
   nav .submenu li li li {
     background: #2a2a2a;
   }
+

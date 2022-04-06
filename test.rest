@@ -1,0 +1,6 @@
+### test api
+GET https://sfd-reader.azurewebsites.net/api/HttpTrigger1?code=0pllYN8j9pRwRU6VaKri3bsfnf4oa5Jl3ZBUN2/koL7bLjDjd046HQ==
+
+
+### test api
+GET https://sfdx-cli.github.io/mockapi/d3-sample1.json
