@@ -1,0 +1,28 @@
+.slds-button_neutral {
+    --slds-c-button-spacing-inline-start: var(--slds-c-button-neutral-spacing-inline-start, var(--sds-c-button-neutral-spacing-inline-start, 1rem));
+    --slds-c-button-spacing-inline-end: var(--slds-c-button-neutral-spacing-inline-end, var(--sds-c-button-neutral-spacing-inline-end, 1rem));
+    text-align: center;
+    vertical-align: middle;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: border .15s linear;
+    transition: border .15s linear;
+    --slds-c-button-color-background: var(--slds-c-button-neutral-color-background, var(--sds-c-button-neutral-color-background, white));
+    --slds-c-button-color-border: var(--slds-c-button-neutral-color-border, var(--sds-c-button-neutral-color-border, #c9c9c9));
+}
+
+
+.slds-button--neutral, .slds-button_neutral {
+    --slds-c-button-spacing-inline-start: none;
+    --slds-c-button-spacing-inline-end: none;
+    --slds-c-button-color-background: #00000000;
+    --slds-c-button-color-border: #00000000;
+    color: var(--white-color);
+}
+
+.slds-button:focus, .slds-button:hover {
+    --slds-c-button-color-border: #00000000;
+    --slds-c-button-color-background: #00000000;
+    color: var(--white-color);
+}

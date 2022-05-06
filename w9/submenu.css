@@ -61,18 +61,10 @@
   height: 30px;
 }
 
-.submenumain {
-  margin-left: 8px;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
 
-li:hover .submenumain {
-  margin-left: 16px;
-}
+
+
+
 
   nav ul > li.sub > a:after {
     pointer-events: none;
@@ -148,10 +140,11 @@ li:hover .submenumain {
     padding-left: 8px;
   }
 
-  nav .submenu:hover li .sub{
+  /* nav .submenu:hover li .sub{
     list-style: none;
     padding-left: 16px;
-  }
+  } */
+
   /* nav .submenu li:hover {
     padding-left: 16px;
     -webkit-transition: all 0.2s ease-out;
@@ -160,6 +153,23 @@ li:hover .submenumain {
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
   } */
+
+  /* .sub{
+  margin-left: 16px;
+} */
+
+.submenumain {
+  margin-left: 8px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+a.submenumain:hover {
+  margin-left: 16px;
+}
 
   nav .submenu li li {
     background: #3a3a3a;

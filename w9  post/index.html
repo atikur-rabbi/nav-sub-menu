@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <title>Responsive Side Menu &ndash; Layout Examples &ndash; Pure</title>
+    <!-- <link rel="stylesheet" href="pure2.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="submenu.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading nav__logo" href="#company">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312.251 322.326" class="nav__logoImg"><g c-lwrAdminThemeLayout_lwrAdminThemeLayout="" id="Group_19-1" data-name="Group 19" transform="translate(9517 8641.933)"><path c-lwrAdminThemeLayout_lwrAdminThemeLayout="" id="Path_1-1" data-name="Path 1" d="M120.722,3.387,105.44,18.669c15.3,2.5,29.136,4.156,42.888,6.224-.31,24.918-34.865,90.139-64.353,116.814-18.363-16.481-30.915-37.366-43.57-58L28.06,96.048c15.178,27.813,37.16,55.274,56.722,70.887,31.473-31.2,61.333-69.481,82.343-134.846,8.334,1.964,8.334,1.964,14.971,4.425-17.639,60.258-51.49,109.97-98.1,152.237C56.7,165.012,35.4,138.047,16,108.1L3.659,120.449c22.168,35.237,48.2,65.717,80.523,91.793,58.707-51.18,101.947-111.086,118.51-188.714A301.35,301.35,0,0,0,120.722,3.387" transform="translate(-9444.994 -8575.274)" fill="#fff"></path><path c-lwrAdminThemeLayout_lwrAdminThemeLayout="" id="Path_2-1" data-name="Path 2" d="M233.735,44.255V10.694C222.092,7.075,209.85,2.65,201.021.623l-14.1,14.1c11.063,3.35,19.459,5.4,29.612,8.478,0,3.474.1,6.224-.021,8.975-.083,1.758-.517,3.495-.889,5.873-14.392-3.453-28.165-6.762-41.957-10.071L158.546,43.1c30.315,5.893,59.617,11.559,85.776,26.365-17.391,99.155-83.315,178.251-138.652,216.982a427.209,427.209,0,0,1-90.656-99.816L2.483,199.16c27.358,43.157,64.332,77.545,103.808,110.9,23.781-17.536,45.493-36.953,73.451-68.964A354.3,354.3,0,0,0,256.006,97.978c3.329-12.449,4.942-25.352,7.382-38.276-10.65-5.563-20.079-10.463-29.653-15.447" transform="translate(-9468.137 -8629.666)" fill="#fff"></path><path c-lwrAdminThemeLayout_lwrAdminThemeLayout="" id="Path_3-1" data-name="Path 3" d="M43.769,101.985c-5-13.813-9.657-26.614-15.013-41.337C51.048,56.616,74.208,51.715,93.749,52l15.8-15.8c-29.261-2.316-56.619,1.1-84.059,7.651-1.241-5.19-2.419-10.05-3.577-14.909C58.1,19.1,99.643,16.272,124.685,21.069L140.856,4.9C117.509.908,92.943.887,69.679,3.037,46.85,5.147,24.248,8.083,3.052,15.569A291.8,291.8,0,0,0,31.03,114.723Z" transform="translate(-9456.94 -8610.244)" fill="#fff"></path><path c-lwrAdminThemeLayout_lwrAdminThemeLayout="" id="Path_4-1" data-name="Path 4" d="M42.206,195.3l12.511-12.511C37.636,150.651,24.939,117.71,19.624,81.646c4.57-2.233,8.561-4.2,13.276-6.514,7.858,33.355,17,65.3,33.893,95.577L79.407,158.1C60.155,119.054,48.492,78.461,47,34.933a516.074,516.074,0,0,1,84.742-16.46c28.95-3.329,56.639.62,83.129,4.156L229.349,8.154C159.062-6.962,93.965-.655,27.772,23.7,28.7,34.912,29.633,45.81,30.5,56.211,19.417,61.918,9.595,66.985,0,71.927,6.927,115.787,18.983,157,42.206,195.3" transform="translate(-9517 -8641.933)" fill="#fff"></path><path c-lwrAdminThemeLayout_lwrAdminThemeLayout="" id="Path_5-1" data-name="Path 5" d="M38.841,4.88l8.334,23.077,24.525.786L52.3,43.8l6.845,23.574L38.841,53.579,18.534,67.372,25.379,43.8,5.982,28.744l24.525-.786Z" transform="translate(-9399.274 -8545.886)" fill="#fff"></path></g></svg>
+                <span class="nav__logo-name">American Trust</span>
+            </a>
+            <nav>
+                <ul class="pure-menu-list">
+
+                    <li class="pure-menu-item active"><a href="#contact" class="pure-menu-link">
+                        <i class='bx bx-grid-alt '></i>
+                        <span class="">Home</span>
+                    </a></li>
+
+                    <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">
+                        <i class='bx bx-user'></i>
+                        <span class="">Users</span>
+                    </a></li>
+
+                    <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">
+                        <i class='bx bx-message-square-detail'></i>
+                        <span class="">Messages</span>
+                    </a></li>
+
+                    <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">
+                        <i class='bx bxs-contact'></i>
+                        <span class="">Contact</span>
+                    </a></li>
+
+
+                    <li class=" ">
+                        <input type="checkbox" checked/>
+                        <a class="submenumain" href="#" >
+                            <i class='bx bxs-book-content' ></i>
+                            <span class="">Report</span>
+                            <i class='bx bxs-chevron-right sub-icon'></i>
+                        </a>
+                
+                        
+                        <!-- Begin-->
+                    
+                        <ul class="submenu">
+                            <li class="sub ">
+                                <a href="#" >
+                                    <i class='bx bxs-report' ></i>
+                                    <span class="">Report</span>
+                                </a>
+                            </li>
+                            <li class="sub ">
+                                <a href="#" >
+                                    <i class='bx bxs-report' ></i>
+                                    <span class="">Report</span>
+                                </a>
+                            </li>
+                            <li class="sub ">
+                                <a href="#" >
+                                    <i class='bx bxs-report' ></i>
+                                    <span class="">Report</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>    
+            </nav>
+
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="header">
+            <h1>Page Title</h1>
+            <h2>A subtitle for your page goes here</h2>
+        </div>
+
+        <div class="content">
+            <h2 class="content-subhead">How to use this layout</h2>
+            <p>
+                To use this layout, you can just copy paste the HTML, along with the CSS in <a href="/layouts/side-menu/styles.css" alt="Side Menu CSS">side-menu.css</a>, and the JavaScript in <a href="/js/ui.js">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an <code>active</code> class that makes the menu responsive.
+            </p>
+
+            <h2 class="content-subhead">Now Let's Speak Some Latin</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <div class="pure-g">
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
+                </div>
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
+                </div>
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
+                </div>
+                <div class="pure-u-1-4">
+                    <img class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain">
+                </div>
+            </div>
+
+            <h2 class="content-subhead">Try Resizing your Browser</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+</div>
+
+<script src="js/ui.js"></script>
+
+</body>
+</html>
