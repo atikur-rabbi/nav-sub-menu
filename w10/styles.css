@@ -104,11 +104,11 @@
     fill: var(--nav-svg-fill-color);
   }
 
-  .nav-item>img.svg {
-
+  .nav-item>img {
+    margin: auto;
+    padding: 18px;
     fill: var(--nav-svg-fill-color);
   }
-
   a .nav-item.active , a:hover .nav-item {
     background: var(--nav-menu-item-background-active);
     border-left: 3px solid var(--at-red);
@@ -119,6 +119,10 @@
     fill: var(--nav-svg-fill-color-active);
   }
 
-  a .nav-item.active>svg , a .nav-item>svg:hover {
+  a .nav-item>svg:hover {
     fill: var(--nav-svg-fill-color-active);
+  }
+
+  a .nav-item>svg {
+    fill: var(--nav-svg-fill-color);
   }
