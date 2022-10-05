@@ -1,0 +1,16 @@
+:root {
+    --svg-color: #5288AD;
+    --svg-color2: rebeccapurple;
+}
+.header {
+    float: right;
+}
+.icon {
+    width: 24px;
+    height: 24px;
+}
+.icon > svg {
+    width: fit-content;
+    height: fit-content;
+    fill: var(--svg-color2);
+}
