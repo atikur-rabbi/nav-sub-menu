@@ -1,0 +1,10 @@
+.community_layout-section_section .section-content {
+    margin: 0%;
+    padding: 0%;
+}
+
+.community_layout-section_section .columns-content {
+    margin: 0;
+    padding: 0;
+    max-width: inherit; 
+}
