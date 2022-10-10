@@ -1,22 +1,58 @@
 :root {
     --svg-color: #5288AD;
     --svg-color2: rebeccapurple;
+    --at-grey-lite: #B7C7D3;
 }
-.header {
-    float: right;
-}
+
 .icon {
     width: 24px;
     height: 24px;
+    margin: 10px 10px;
 }
 .icon > svg {
     width: fit-content;
     height: fit-content;
-    fill: var(--svg-color2);
+    fill: var(--svg-color);
 }
 
 
+
+
 /* user menu */
+.header {
+    float: right;
+    display: flex;
+    padding: 10px;
+}
+.header-item{
+    padding: 2px;
+    height: 40px;
+}
 .user-menu {
-    position: ;
+    width: auto;
+    margin-left: 10px;
+    display: flex;
+}
+
+.user-profile {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: var(--at-grey-lite) 2px solid;
+}
+
+.user-name{
+    align-content: center;
+    padding-top: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.user-arrow {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.user-arrow > svg{
+    fill: var(--svg-color);
 }
