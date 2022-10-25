@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="home-container">
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <div class="row">
+                    <h1 class="home-Label">Good Afternoon, William!</h1>
+                </div>
+                <div class="row">
+                    <p class="home-details">We have <span style="color:  #5288ad;">4 updates</span> for you to review today.</p> 
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <style>
+                    .right-bottom {
+                        position: absolute;
+                        right: 20px;
+                        bottom: 20px;
+                    }
+                </style>
+                <div class="row right-bottom">
+                    <div class="col-6">
+                        <button type="submit" class="btn btn2">Create Report</button>
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" class="btn btn2">Create Report</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+      
+        <slot></slot>
+    </div>  
+</body>
+</html>

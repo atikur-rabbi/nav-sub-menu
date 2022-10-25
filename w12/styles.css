@@ -12,6 +12,7 @@
 
     --at-blue-10: #001E35;
     --at-blue-11: #002E53;
+    --at-blue-12: #06223C;
 
     --at-red: #A12b2a;
     --at-red-1: #9E292D;
@@ -54,7 +55,7 @@
     --nav-svg-fill-color-active: var(--at-white);
 
     /*===== Header =====*/
-    --header-background-color: var(--at-blue-0);
+    --header-background-color: var(--at-blue-12);
   }
 
   body {
@@ -87,7 +88,7 @@
   }
 
   .header-container {
-    background-color: var(--at-blue-0);
+    background-color: var(--header-background-color);
   }
 
   .slot-container {
